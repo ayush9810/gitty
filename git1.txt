@@ -1,0 +1,186 @@
+1)Create two folders project1 and project2 locally. Create a repository in github or bitbucket, name it test_project
+
+2)Switch to project1
+
+
+3)Switch to a new branch - 'staging'.
+git branch staging
+get checkout staging
+
+4)Add a file in it - 'test1' and add content to it 'This is first commit'.
+vim test1
+Git add test1.txt
+Git commit –m “file added”
+
+5)Push it to github.
+)$ git remote add origin https://github.com/ayush9810/test_project.git
+$ git push -u origin staging
+
+6)Move to folder project2.
+CD project2
+
+7)Clone the repo in project2.
+$ git clone https://github.com/ayush9810/test_project.git
+
+
+8)Switch to staging.
+git checkout staging
+
+9)Change the text in file 'test1' to 'This is second commit'.
+$ vim test1.txt
+$ add test1.txt
+$ git add test1.txt
+
+10)Commit and push to remote branch.
+$ git commit -m "created second commit"
+$ git push origin staging
+
+11)Move to project1.
+cd project1
+
+
+12)Switch to staging branch.
+git checkout staging
+
+13)Change the text in file 'test1' to 'This is third commit'.
+vim test1.txt
+
+14)Commit and push to remote branch. (Explain what happened here).
+error happened because we didn’t fetch the changes made in project2
+
+15)Switch to master.
+) $ git checkout master
+
+
+16)Merge staging branch into master.
+$ git merge staging
+
+17)Create a new branch testing.
+$ git branch testing
+$ git checkout testing
+
+
+18)Change the text to 'A is an alphabet' and commit.
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to A"
+
+
+19)Repeat the 'step 18' seven times and each time update the alphabet 'A' to 'B' to 'C' etc.(Don't forget to commit the change everytime)
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to B"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to C"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to D"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to E"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to F"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to G"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to H"
+
+20)Push the branch to github.
+git push -u origin testing
+
+21)Checkout to master.
+git checkout master
+
+22)Change the text '1 is a number' and commit.
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to 1"
+
+23)Repeat the 'step 22' seven times and each time update the number '1' to '2' to '3' etc.(Don't forget to commit the change everytime)
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to 2"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to 3"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to 4"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to 5"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to 6"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to 7"
+
+$ vim test1.txt
+$ git add test1.txt
+$ git commit -m "changed to 8"
+
+24)Push master branch to github.
+git push -u origin master
+
+25)Now, rebase testing into master(and don't push the new master and testing branch).
+$ git rebase master
+$ vim test1.txt
+$ git rebase --continue
+
+$ git rebase master
+$ vim test1.txt
+$ git rebase --continue
+
+$ git rebase master
+$ vim test1.txt
+$ git rebase --continue
+
+$ git rebase master
+$ vim test1.txt
+$ git rebase --continue
+
+$ git rebase master
+$ vim test1.txt
+$ git rebase --continue
+
+$ git rebase master
+$ vim test1.txt
+$ git rebase --continue
+
+$ git rebase master
+$ vim test1.txt
+$ git rebase --continue
+
+26)Move to project2.
+CD priject2
+
+27)Track testing branch.
+$ git checkout testing
+
+28)Checkout to master.
+git checkout master
+
+
+29)Merge branch testing into master.
+git merge testing
+
+
+30)Share your views about the difference between master and testing.
+testing is a dummy branch and changes are made on it.
+And when changes are done then it is merged into master
